@@ -4,3 +4,4 @@
 - TypeScript
   - Build (tsup)
   - Execute (tsx)
+- ESLint
