@@ -1,7 +1,9 @@
 import http from 'node:http'
 
+const { PORT } = process.env
+
 http
   .createServer((req, res) => {
     res.end('Node ts template')
   })
-  .listen(3333, () => console.log('HTTP Server Running!'))
+  .listen(PORT, () => console.log(`HTTP Server Running on port ${PORT}!`))
